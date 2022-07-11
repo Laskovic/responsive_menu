@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6.25rem;
+    min-height: 6.25rem;
+    background-color: rgb(57, 139, 139);
+    padding: 0 5rem;
+}
+
+.fa-brands{
+    font-size: 4rem;
+}
+
+a {
+    font-size: 1.5rem;
+    color: black;
+}
+
+i {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.wrapper2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 1rem;
+}
+
+.link {
+    margin: 1rem 0;
+}
+
+@media (max-width:)
