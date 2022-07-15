@@ -1,43 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 .wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 6.25rem;
-    min-height: 6.25rem;
-    background-color: rgb(57, 139, 139);
-    padding: 0 5rem;
+    min-height: 7vh;
+    min-width: 100vw;
+    background: linear-gradient(to left, rgb(255, 0, 0), rgb(194, 185, 185));
+}
+
+.link-wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
 .fa-brands{
-    font-size: 4rem;
+    font-size: 3rem;
+}
+
+.link {
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+}
+
+.link:hover {
+    border-bottom: 1px solid black;
 }
 
 a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: black;
 }
 
-i {
-    color: black;
-    font-size: 1.5rem;
+button {
+    padding: 0 3px;
+    background-color: #fff;
+    border: none;
+    border-radius:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid black;
+}
+
+.search-wrapper {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.searchTerm {
+    border-radius: 10px;
+    padding: 0.2rem;
+    border: 1.5px solid black;
+}
+
+.searchTerm:focus {
+    outline: none;
 }
 
 .wrapper2 {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     padding: 1rem;
 }
 
-.link {
+.hamburger-link {
     margin: 1rem 0;
 }
 
-@media (max-width:)
+@media (max-width: 650px ) {
+    .fa-brands {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .fa-brands {
+        display: block;
+    }
+    .link {
+        display: none;
+    }
+    .fa-bars {
+        display: block;
+    }
+}
