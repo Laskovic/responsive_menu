@@ -1,4 +1,15 @@
 {
+  "name": "responive_menu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "build-css": "tailwindcss -i build responive_menu/src/styles.css -o responive_menu/public/styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
   "dependencies": {
     "tailwindcss": "^3.1.6"
   }
