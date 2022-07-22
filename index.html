@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./tailwind/output.css">
     <script src="https://kit.fontawesome.com/51eb43ada7.js" crossorigin="anonymous"></script>
     <title>Menu</title>
 </head>
 <body>
     <section>
-        <div class="wrapper">
+        <div class="wrapper flex flex-col">
             <i class="fa-brands fa-microblog"></i>
                     <a href="" class="link">Home</a>
                     <a href="" class="link">Products</a>
                     <a href="" class="link">Brands</a>
                     <a href="" class="link">Contact</a>
                     <div class="search-wrapper">
+                        <form action="">
                         <input type="text" class="searchTerm" placeholder="Search...">
+                        </form>
                         <button type="submit" class="searchButton">Go !
                         </button>
                 </div>
