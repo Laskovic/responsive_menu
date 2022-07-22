@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 
@@ -208,4 +202,3 @@ button {
     .wrapper {
         padding: 0 3rem;
     }
-}
