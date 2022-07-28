@@ -9,37 +9,38 @@
     <title>Menu</title>
 </head>
 <body>
+
     <section>
-        <div class="relative flex justify-evenly items-center min-w-full bg-gradient-to-r from-sky-400 to-red-600">
+        <div class="wrapper relative flex justify-evenly items-center min-w-full bg-gradient-to-r from-sky-400 to-red-600 min-h-[6vh]">
             <i class="fa-brands fa-microblog"></i>
                     <a href="" class="hover:border-b hover:border-black text-base link">Home</a>
                     <a href="" class="hover:border-b hover:border-black text-base link">Products</a>
                     <a href="" class="hover:border-b hover:border-black text-base link">Brands</a>
                     <a href="" class="hover:border-b hover:border-black text-base link">Contact</a>
-                    <div class="search-wrapper">
+                    <div class="search-wrapper flex gap-2">
                         <form action="">
-                        <input type="text" class="searchTerm" placeholder="Search...">
+                        <input type="text" class="searchTerm rounded-xl p-[0.3rem] focus:outline-none" placeholder="Search...">
                         </form>
-                        <button type="submit" class="searchButton ">Go!
+                        <button type="submit" class="searchButton bg-white rounded-xl w-14">Go!
                         </button>
                 </div>
-                    <div class="burger-open">
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
+                    <div class="burger-open absolute right-0 mr-8 opacity-0 invisible">
+                        <span class="w-[18px] h-[3px] block m-[2px] bg-black"></span>
+                        <span class="w-[18px] h-[3px] block m-[2px] bg-black"></span>
+                        <span class="w-[18px] h-[3px] block m-[2px] bg-black"></span>
                     </div>
         </div>
-
     </section>
+
     <section>
         <div class="wrapper2 toggled">
-            <a href="" class="hamburger-link hamburger-link-1">Home</a>
-            <a href="" class="hamburger-link hamburger-link-2">Products</a>
-            <a href="" class="hamburger-link hamburger-link-3">Brands</a>
-            <a href="" class="hamburger-link hamburger-link-4">Contact</a>
+            <a href="" class="w-screen flex justify-center align-center py-1.5 border-solid border-x-0 border-y-[1px] border-black m-px bg-[#0bbafacc]">Home</a>
+            <a href="" class="w-screen flex justify-center align-center py-1.5 border-solid border-x-0 border-y-[1px] border-black m-px bg-[#157ca1cc]">Products</a>
+            <a href="" class="w-screen flex justify-center align-center py-1.5 border-solid border-x-0 border-y-[1px] border-black m-px bg-[#b43f34cc]">Brands</a>
+            <a href="" class="w-screen flex justify-center align-center py-1.5 border-solid border-x-0 border-y-[1px] border-black m-px bg-[#ff0000cc]">Contact</a>
         </div>
-
     </section>
+
     <script src="script.js"></script>
 </body>
 </html>

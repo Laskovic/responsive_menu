@@ -4,13 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
-/* @layer base {
-    :root {
-        --first-color: 255 0 0;
-        --second-color: 11 186 250;
-    }
-} */
-
 * {
     margin: 0;
     padding: 0;
@@ -24,35 +17,11 @@
     font-size: 3rem;
 }
 
-button {
-    background-color: #fff;
-    border: none;
-    border-radius:10px;
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    align-items: center;
-    border: 1.5px solid black;
-    width: 3.5rem;
-    height: 1rem;
-    box-sizing:border-box;
-}
-
-.burger-open {
-    position: absolute;
-    right: 0;
-    margin-right: 2rem;
-    opacity: 0;
-    visibility: hidden;
-}
-
 .toggled {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* position: absolute;
-    top: 0; */
 }
 
 .toggled2 {
@@ -64,58 +33,9 @@ button {
     visibility: visible;
 }
 
-.line {
-    width: 18px;
-    height: 3px;
-    background-color: black;
-    display: block;
-    margin: 2px;
-}
-
-.search-wrapper {
-    display: flex;
-    gap: 0.5rem;
-}
-
-.searchTerm {
-    border-radius: 10px;
-    padding: 0.2rem;
-    border: 1.5px solid black;
-}
-
-.searchTerm:focus {
-    outline: none;
-}
-
 .wrapper2 {
     opacity: 0;
     visibility: hidden;
-}
-
-.hamburger-link {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 0;
-    border: 1px solid;
-    border-radius: 10px;
-}
-
-.hamburger-link-1 {
-    background: rgba(11, 186, 250, 0.8)
-}
-
-.hamburger-link-2 {
-    background: rgba(21, 124, 161, 0.8)
-}
-
-.hamburger-link-3 {
-    background: rgb(180, 63, 52, 0.8)
-}
-
-.hamburger-link-4 {
-    background: rgb(255, 0, 0, 0.8)
 }
 
 @media (max-width: 1000px) {
@@ -156,10 +76,21 @@ button {
 @media (max-width: 475px) {
     .link {
         display: none;
+        visibility: hidden;
     }
     .wrapper {
-        justify-content:space-around;
-        align-items: center;
+        justify-content: space-around;
+        height: 3rem;
+    }
+    .fa-brands {
+        position: absolute;
+        left: 0;
+        margin-left: 2rem;
+        font-size: 1.8rem;
+    }
+    .search-wrapper {
+        position: absolute;
+        right: 8rem;
     }
     .burger-open {
         opacity: 1;
