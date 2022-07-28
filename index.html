@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="sm:text-[0.6rem] md:text-[0.8rem] lg:text-xl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,37 +9,38 @@
     <title>Menu</title>
 </head>
 <body>
+
     <section>
-        <div class="wrapper flex flex-col">
-            <i class="fa-brands fa-microblog"></i>
-                    <a href="" class="link">Home</a>
-                    <a href="" class="link">Products</a>
-                    <a href="" class="link">Brands</a>
-                    <a href="" class="link">Contact</a>
-                    <div class="search-wrapper">
+        <div class="relative flex justify-evenly items-center min-w-full bg-gradient-to-r from-sky-400 to-red-600 min-h-[6vh] sm:justify-end sm:h-12 md:justify-around md:min-h-[5rem]">
+            <i class="fa-brands fa-microblog sm:absolute sm:left-0 sm:ml-8 md:static md:ml-0"></i>
+                    <a href="" class="hover:border-b hover:border-black text-base link sm:invisible hidden md:visible md:flex">Home</a>
+                    <a href="" class="hover:border-b hover:border-black text-base link sm:invisible hidden md:visible md:flex">Products</a>
+                    <a href="" class="hover:border-b hover:border-black text-base link sm:invisible hidden md:visible md:flex">Brands</a>
+                    <a href="" class="hover:border-b hover:border-black text-base link sm:invisible hidden md:visible md:flex">Contact</a>
+                    <div class="search-wrapper flex gap-2 sm:mr-28 md:m-0">
                         <form action="">
-                        <input type="text" class="searchTerm" placeholder="Search...">
+                        <input type="text" class="searchTerm rounded-xl p-[0.3rem] focus:outline-none md:w-48" placeholder="Search...">
                         </form>
-                        <button type="submit" class="searchButton">Go !
+                        <button type="submit" class="searchButton bg-white rounded-xl w-14">Go!
                         </button>
                 </div>
-                    <div class="burger-open">
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
+                    <div class="burger-open absolute right-0 mr-8 opacity-0 invisible sm:opacity-100 sm:visible md:invisible md:opacity-0">
+                        <span class="w-[18px] h-[3px] block m-[2px] bg-black"></span>
+                        <span class="w-[18px] h-[3px] block m-[2px] bg-black"></span>
+                        <span class="w-[18px] h-[3px] block m-[2px] bg-black"></span>
                     </div>
         </div>
-
     </section>
+
     <section>
         <div class="wrapper2 toggled">
-            <a href="" class="hamburger-link hamburger-link-1">Home</a>
-            <a href="" class="hamburger-link hamburger-link-2">Products</a>
-            <a href="" class="hamburger-link hamburger-link-3">Brands</a>
-            <a href="" class="hamburger-link hamburger-link-4">Contact</a>
+            <a href="" class="w-screen flex justify-center align-center py-1.5 border-solid border-x-0 border-y-[1px] border-black m-px bg-[#0bbafacc]">Home</a>
+            <a href="" class="w-screen flex justify-center align-center py-1.5 border-solid border-x-0 border-y-[1px] border-black m-px bg-[#157ca1cc]">Products</a>
+            <a href="" class="w-screen flex justify-center align-center py-1.5 border-solid border-x-0 border-y-[1px] border-black m-px bg-[#b43f34cc]">Brands</a>
+            <a href="" class="w-screen flex justify-center align-center py-1.5 border-solid border-x-0 border-y-[1px] border-black m-px bg-[#ff0000cc]">Contact</a>
         </div>
-
     </section>
+
     <script src="script.js"></script>
 </body>
 </html>
